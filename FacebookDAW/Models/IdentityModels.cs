@@ -24,6 +24,13 @@ namespace FacebookDAW.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<Photo> Photos { get; set; }
+        public DbSet<Chat> Chats { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         public static ApplicationDbContext Create()
         {
