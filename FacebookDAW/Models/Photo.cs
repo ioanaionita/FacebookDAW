@@ -9,9 +9,9 @@ namespace FacebookDAW.Models
     public class Photo
     {
         [Key]
-        private int id { get; set; }
-        private string description { get; set; }
-        public int albumId { get; set; }
+        private int Id { get; set; }
+        private string Description { get; set; }
+        public int AlbumId { get; set; }
         
         public virtual Album Album { get; set; }
         public virtual ICollection<Comment> Comments{ get; set; }

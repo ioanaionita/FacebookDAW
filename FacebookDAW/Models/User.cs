@@ -9,13 +9,13 @@ namespace FacebookDAW.Models
     public class User
     {
         [Key]
-        private int id { get; set; }
-        private string firstName { get; set; }
-        private string lastName { get; set; }
-        private DateTime dateOfBirth { get; set; }
-        private string city { get; set; }
-        private string country { get; set; }
-        private Boolean profileVisibility { get; set; }
+        private int Id { get; set; }
+        private string FirstName { get; set; }
+        private string LastName { get; set; }
+        private DateTime DateOfBirth { get; set; }
+        private string City { get; set; }
+        private string Country { get; set; }
+        private Boolean ProfileVisibility { get; set; }
 
         public virtual ICollection<Group> Groups { get; set; }
         public virtual ICollection<User> Friends { get; set; }

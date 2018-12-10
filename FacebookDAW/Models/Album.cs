@@ -9,8 +9,8 @@ namespace FacebookDAW.Models
     public class Album
     {
         [Key]
-        private int id { get; set; }
-        public int userId { get; set; }
+        private int Id { get; set; }
+        public int UserId { get; set; }
 
         public virtual User User { get; set; }
         public ICollection<Photo> Photos { get; set; }

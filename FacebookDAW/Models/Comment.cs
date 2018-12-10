@@ -9,10 +9,10 @@ namespace FacebookDAW.Models
     public class Comment
     {
         [Key]
-        private int id { get; set; }
-        private string content { get; set; }
-        public int userId { get; set; }
-        private DateTime dateCreated { get; set; }
+        private int Id { get; set; }
+        private string Content { get; set; }
+        public int UserId { get; set; }
+        private DateTime DateCreated { get; set; }
         public virtual User User { get; set; }
     }
 }
